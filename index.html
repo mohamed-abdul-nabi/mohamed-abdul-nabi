@@ -9,46 +9,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#070a0e;color:#f4f7f8;font-family:Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:20;height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(7,10,14,.88);backdrop-filter:blur(16px);border-bottom:1px solid #172029}.logo{font-size:22px;font-weight:800;letter-spacing:2px}.logo b{color:#55d6c2}nav{display:flex;gap:25px;color:#aab4bd;font-size:13px}nav a:hover{color:#55d6c2}.navbtn{border:1px solid #55d6c2;color:#55d6c2;padding:9px 16px;border-radius:999px;font-size:12px}.hero{min-height:calc(100vh - 72px);padding:75px 9%;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;background:radial-gradient(circle at 75% 45%,#12332f 0,#070a0e 37%)}.eyebrow{color:#55d6c2;letter-spacing:2px;font-size:11px;font-weight:800}h1{font-size:clamp(48px,7vw,84px);line-height:.98;margin:15px 0 20px;letter-spacing:-3px}.hero h2{font-size:24px;line-height:1.45;margin:0;color:#dce3e7}.hero h2 span{color:#55d6c2}.lead{max-width:640px;color:#8f9aa4;line-height:1.9;font-size:15px;margin:22px 0}.buttons{display:flex;gap:12px;margin:28px 0}.btn{padding:13px 23px;border-radius:9px;font-weight:700;font-size:13px}.primary{background:#55d6c2;color:#07100f}.secondary{border:1px solid #2a3741;color:#eef3f5}.stats{display:flex;gap:35px;margin-top:34px}.stats strong{display:block;font-size:14px}.stats small{color:#6f7b85;font-size:11px}.hero-visual{display:flex;justify-content:center;position:relative}.portrait{width:min(390px,85vw);height:500px;border-radius:28px;overflow:hidden;border:1px solid #2a3943;box-shadow:0 35px 90px rgba(0,0,0,.55);position:relative;background:#111}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}.portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.62))}.badge{position:absolute;z-index:2;bottom:25px;left:25px;font-size:11px;letter-spacing:2px;color:#cdd6dc}.badge strong{display:block;color:#fff;font-size:19px;letter-spacing:1px}section{padding:95px 9%}.dark{background:#0b1015}.section-head{display:flex;gap:16px;align-items:center;margin-bottom:42px}.num{color:#55d6c2;font-size:12px;font-weight:800}h3.section-title{font-size:38px;margin:0}.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:55px}.about-grid h3{font-size:27px;line-height:1.55;margin-top:0}.muted{color:#8c98a2;line-height:1.9}.info{border:1px solid #202c35;border-radius:15px;padding:25px;background:#090e13}.info p{margin:0;padding:13px 0;border-bottom:1px solid #1b252d;color:#aab5bd}.info p:last-child{border:0}.info b{color:#fff;margin-right:8px}.focus{margin-top:25px;border-left:3px solid #55d6c2;padding-left:18px}.focus strong{display:block;color:#55d6c2;font-size:18px}.focus span{color:#7e8992;font-size:12px}.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{border:1px solid #202b34;border-radius:13px;padding:22px;background:#090e13}.skill strong{font-size:17px}.skill small{display:block;color:#78848e;margin-top:7px}.training{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{border:1px solid #202b34;border-radius:15px;padding:28px;background:linear-gradient(145deg,#10171e,#090d12)}.card .tag{color:#55d6c2;font-size:11px;font-weight:800;letter-spacing:1px}.card h4{font-size:22px;margin:12px 0}.card p,.card li{color:#89959e;line-height:1.8;font-size:13px}.card ul{padding-left:20px}.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}.cert{overflow:hidden;border:1px solid #202b34;border-radius:14px;background:#080c10}.cert img{width:100%;display:block;aspect-ratio:1.45;object-fit:cover;object-position:top}.cert div{padding:14px;font-size:12px;color:#aeb8bf}.contact{background:#55d6c2;color:#07100f;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.contact .eyebrow{color:#07100f}.contact h2{font-size:46px;line-height:1.25;margin:12px 0}.contact-links{display:flex;flex-direction:column;gap:13px}.contact-links a{font-weight:700;border-bottom:1px solid rgba(0,0,0,.25);padding-bottom:9px}footer{padding:26px 9%;background:#05070a;color:#68747e;text-align:center;font-size:11px}@media(max-width:800px){nav{display:none}.nav{padding:0 6%}.hero{grid-template-columns:1fr;padding:65px 7%}.hero-visual{order:-1}.portrait{height:430px;width:300px}.about-grid,.skills,.training,.certs,.contact{grid-template-columns:1fr}section{padding:75px 7%}.contact h2{font-size:36px}h3.section-title{font-size:32px}}
 
-/* --- Premium motion layer --- */
+
+/* --- Premium motion layer v2 --- */
 html{scroll-behavior:smooth}
 body{overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.035;background-image:radial-gradient(#fff .55px,transparent .55px);background-size:5px 5px}
-.nav{transition:background .35s ease,box-shadow .35s ease,transform .35s ease}
-.nav.scrolled{background:rgba(5,8,11,.96);box-shadow:0 10px 35px rgba(0,0,0,.28)}
+.nav{transition:background .35s ease,box-shadow .35s ease}
+.nav.scrolled{background:rgba(5,8,11,.97);box-shadow:0 10px 35px rgba(0,0,0,.35)}
 .hero{position:relative;overflow:hidden}
-.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none;filter:blur(2px);opacity:.2}
-.hero::before{width:260px;height:260px;right:-100px;top:12%;background:#55d6c2;filter:blur(90px);animation:orb 8s ease-in-out infinite}
-.hero::after{width:180px;height:180px;left:-80px;bottom:4%;background:#2c79ff;filter:blur(80px);animation:orb 10s ease-in-out infinite reverse}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+.hero::before{width:420px;height:420px;right:-170px;top:10%;background:rgba(85,214,194,.16);filter:blur(70px);animation:glowMove 7s ease-in-out infinite}
+.hero::after{width:300px;height:300px;left:-140px;bottom:0;background:rgba(52,100,255,.12);filter:blur(65px);animation:glowMove 9s ease-in-out infinite reverse}
 .hero>div{position:relative;z-index:1}
-.portrait{animation:portraitFloat 5s ease-in-out infinite;transition:transform .45s ease,box-shadow .45s ease}
-.portrait:hover{transform:translateY(-10px) rotate(.5deg);box-shadow:0 45px 110px rgba(0,0,0,.65),0 0 45px rgba(85,214,194,.13)}
-.eyebrow{animation:fadeUp .8s .1s both}
-.hero h1{animation:fadeUp .8s .2s both}
-.hero h2{animation:fadeUp .8s .32s both}
-.hero .lead{animation:fadeUp .8s .44s both}
-.hero .buttons{animation:fadeUp .8s .56s both}
-.hero .stats{animation:fadeUp .8s .68s both}
-.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
-.btn:hover{transform:translateY(-3px)}
-.primary:hover{box-shadow:0 12px 30px rgba(85,214,194,.22)}
-.secondary:hover{border-color:#55d6c2}
-.section-head{transform:translateY(12px);opacity:0;transition:opacity .7s ease,transform .7s ease}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.reveal.show,.section-head.show{opacity:1;transform:none}
-.skill,.card,.cert,.info{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
-.skill:hover,.card:hover,.cert:hover,.info:hover{transform:translateY(-6px);border-color:#55d6c2;box-shadow:0 18px 45px rgba(0,0,0,.2)}
-.skill strong,.card h4{transition:color .25s ease}
-.skill:hover strong,.card:hover h4{color:#55d6c2}
-.focus{transition:transform .3s ease}
-.focus:hover{transform:translateX(7px)}
+.hero-visual{perspective:1000px}
+.portrait{animation:floatPhoto 4.5s ease-in-out infinite;transition:transform .4s ease,box-shadow .4s ease}
+.portrait:hover{transform:translateY(-12px) rotateY(-3deg) rotateX(2deg)!important;box-shadow:0 45px 100px rgba(0,0,0,.65),0 0 45px rgba(85,214,194,.18)}
+.eyebrow{animation:riseIn .7s .05s both}
+.hero h1{animation:riseIn .8s .15s both}
+.hero h2{animation:riseIn .8s .28s both}
+.hero .lead{animation:riseIn .8s .41s both}
+.hero .buttons{animation:riseIn .8s .54s both}
+.hero .stats{animation:riseIn .8s .67s both}
+.btn{transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-4px) scale(1.02)}
+.primary:hover{box-shadow:0 14px 34px rgba(85,214,194,.28)}
+.section-head,.reveal,.skill,.card,.cert,.info,.focus{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}
+.section-head.visible,.reveal.visible,.skill.visible,.card.visible,.cert.visible,.info.visible,.focus.visible{opacity:1;transform:none}
+.skill,.card,.cert,.info{transition:opacity .8s ease,transform .8s ease,box-shadow .3s ease,border-color .3s ease}
+.skill:hover,.card:hover,.cert:hover,.info:hover{transform:translateY(-8px)!important;border-color:#55d6c2;box-shadow:0 20px 50px rgba(0,0,0,.28)}
+.focus:hover{transform:translateX(8px)!important}
 .stats>div{transition:transform .25s ease}
-.stats>div:hover{transform:translateY(-4px)}
+.stats>div:hover{transform:translateY(-5px)}
 .contact{position:relative;overflow:hidden}
-.contact::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-120px;top:-150px;background:rgba(255,255,255,.12);filter:blur(50px);pointer-events:none}
+.contact::after{content:"";position:absolute;width:360px;height:360px;right:-140px;top:-170px;border-radius:50%;background:rgba(255,255,255,.13);filter:blur(55px);animation:glowMove 6s ease-in-out infinite}
 .contact>*{position:relative;z-index:1}
-@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-@keyframes portraitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes orb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-20px) scale(1.12)}}
+@keyframes riseIn{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floatPhoto{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@keyframes glowMove{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(35px,-25px) scale(1.14)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -146,22 +142,48 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;op
 </main>
 <footer>© 2026 Mohamed Abdul Nabi — Personal Portfolio • Structural Engineering & Design</footer>
 
+
+
 <script>
-(() => {
-  const nav = document.querySelector('.nav');
-  const targets = document.querySelectorAll('.section-head, .reveal, .skill, .card, .cert, .info, .focus');
-  const show = el => el.classList.add('show');
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => show(entry.target), Math.min(i * 45, 220));
-        obs.unobserve(entry.target);
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".nav");
+  const items = document.querySelectorAll(
+    ".section-head, .reveal, .skill, .card, .cert, .info, .focus"
+  );
+
+  function reveal(el) {
+    el.classList.add("visible");
+  }
+
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          reveal(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+
+    items.forEach(function(el, i) {
+      el.style.transitionDelay = (Math.min(i * 35, 280)) + "ms";
+      io.observe(el);
     });
-  }, {threshold:.12});
-  targets.forEach(el => observer.observe(el));
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 18), {passive:true});
-})();
+  } else {
+    items.forEach(reveal);
+  }
+
+  window.addEventListener("scroll", function () {
+    nav.classList.toggle("scrolled", window.scrollY > 20);
+  }, { passive: true });
+
+  // Ensure content becomes visible even if a browser blocks observers.
+  setTimeout(function () {
+    items.forEach(function(el) {
+      if (el.getBoundingClientRect().top < window.innerHeight * 1.1) reveal(el);
+    });
+  }, 900);
+});
 </script>
 </body>
 </html>
